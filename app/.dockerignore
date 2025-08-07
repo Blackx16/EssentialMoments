@@ -1,0 +1,26 @@
+# Version control
+.git
+.gitignore
+
+# Docker files (they build the image, they don't need to be inside it)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Dependencies (these are installed INSIDE the container via `npm install`)
+node_modules
+
+# Generated folders (these are generated inside the container if needed)
+android/
+ios/
+www/
+build/
+coverage/
+
+# Secrets & Logs
+.env
+npm-debug.log
+yarn-error.log
+
+# Documentation (not needed for runtime)
+README.md
